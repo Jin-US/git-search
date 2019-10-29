@@ -6,9 +6,10 @@ class gitController {
   getInfo(req,res){
       let query = req.query
       let keyword = query.q
+      let page = query.p
 
       const options = {
-        url: 'https://api.github.com/search/repositories?q='+keyword+"&sort=stars&order=desc",
+        url: 'https://api.github.com/search/repositories?q='+keyword+"&sort=stars&order=desc&page=" +page,
         headers: {
         'User-Agent': 'request'
           }
