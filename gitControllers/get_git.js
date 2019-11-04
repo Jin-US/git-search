@@ -8,6 +8,7 @@ class gitController {
       let keyword = query.q
       let page = query.p
 
+
       const options = {
         url: 'https://api.github.com/search/repositories?q='+keyword+"&sort=stars&order=desc&page=" +page,
         headers: {
@@ -15,6 +16,8 @@ class gitController {
           }
         }
 
+
+          console.log("start132")
     request(options, function(err, result, body) {
       if (err) {
         console.log(err);
