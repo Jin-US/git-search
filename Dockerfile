@@ -23,7 +23,7 @@ COPY . .
 
 # Service must listen to $PORT environment variable.
 # This default value facilitates local development.
-ENV PORT 8080
+ENV PORT 80
 
 # Run the web service on container startup.
 CMD [ "npm", "start" ]

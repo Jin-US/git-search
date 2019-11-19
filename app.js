@@ -10,7 +10,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(router);
 
 
-const PORT = 8080;
+const PORT = 80;
 
 app.listen(PORT, () => {
   console.log(`server running on port ${PORT}`);

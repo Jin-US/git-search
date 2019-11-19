@@ -1,14 +1,14 @@
 # git-search
 
-npm init
 
-npm install express --save
+Browse to http://your-ip-address:80/api/v1/get_info?q=$search&p=$pageNum
 
-npm install babel-cli --save
+``` bash
+http://localhost:8080/api/v1/get_info?q=git-search&p=1
+```
 
-npm install babel-preset-es2015 --save
+Terminal
+``` bash
+curl http://localhost:8080/api/v1/get_info?q=git-search&p=1
+```
 
-nano .babelrc 
-  {
-    "presets":["es2015"]
-  }
